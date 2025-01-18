@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class BasicCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         // Displaying the menu of operations
         System.out.println("Basic Calculator");
         System.out.println("1. Addition");
@@ -11,13 +10,13 @@ public class BasicCalculator {
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
         System.out.print("Enter your choice (1/2/3/4): ");
-        int choice = takeInput(scanner);
+        int choice = scanner.nextInt();
 
         // Taking two numbers from the user
         System.out.print("Enter the first number: ");
-        double num1 = takeInput(scanner);
+        double num1 = scanner.nextInt();
         System.out.print("Enter the second number: ");
-        double num2 = takeInput(scanner);
+        double num2 = scanner.nextInt();
 
         // Perform the operation based on user choice
         double result = 0;
